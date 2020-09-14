@@ -39,7 +39,7 @@ def train_val_split(X,
     Returns:
         Train and validation dataframes.
     """
-    if stratify:
+    if self.stratify:
         X_train, X_val, y_train, y_val = train_test_split(X,
                                                           y,
                                                           test_size=test_size,
@@ -290,7 +290,8 @@ def train_model(model,
                 val_acc_history.append(epoch_acc)
                 val_loss_history.append(epoch_loss)
 
-                scheduler.step(epoch_loss)
+                if scheduler:
+                    scheduler.step(epoch_loss)
 
                 if early_stopping:
                     early_stopping(epoch_loss, model)

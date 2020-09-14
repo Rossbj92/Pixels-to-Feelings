@@ -30,7 +30,7 @@ The datasets (i.e., WEBEmo, Deep Emotion, and UnBiasedEmo) are too large to uplo
 - [visualizations](notebooks/visualizations.ipynb) - produces validation losses/accuracies plots and confusion matrices
 
 ```Models```
-- Holds trained models -- currently empty due to model sizes and will populate after training locally
+- Holds trained models - currently empty due to model sizes and will populate after training locally
 
 ```Reports```
 - ```presentation``` - pdf and ppt format of final project presentation
